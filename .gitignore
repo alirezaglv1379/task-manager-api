@@ -1,6 +1,51 @@
-venv/
-*.db
-*.pyc
+# Python
 __pycache__/
-.DS_Store
+*.py[cod]
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+backend/.venv/
+
+# Secrets and local data
 .env
+.env.*.local
+backend/.env
+backend/*.db
+backend/*.db-*
+backend/*.sqlite
+backend/*.sqlite3
+*.backup-*.db
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Build archives
+*.zip
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.*.example
+
+# Backup and reference-only directories
+backend-backup-before-security-fix/
+original-source/
